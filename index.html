@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <title>DevBlogg</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="#" aria-label="DevBlog — головна">
+                <span class="logo__logo-icon" aria-hidden="true">&lt;/&gt;</span>
+                <span class="header__logo-text">Dev<span class="header__logo-text--accent">Blog</span></span>
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-list-item header__menu-list-item--active">
+                        <a href="">Головна</a>
+                    </li>
+                    <li class="header__menu-list-item"><a>Статті</a></li>
+                    <li class="header__menu-list-item"><a>Проєкти</a></li>
+                    <li class="header__menu-list-item"><a>Про мене</a></li>
+                </ul>
+            </nav>
+            <button class="header_btn" type="button">
+                Зв'язатись
+                <span class="header_btn-icon" aria-hidden="true">✉️</span>
+            </button>
+        </div>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="container hero__container">
+
+
+
+            <div class="hero__left">
+                <p class="hero__eyebrown">
+                    Відкритий до пропозицій
+                </p>
+                <h1 class="hero__title">
+                    Привіт, я <span class="hero__span"> Назарій <br></span>
+                    <span class="hero__title--gradient">Frontend Developer</span>
+                </h1>
+                <p class="hero__about">Пишу про HTML, CSS, JavaScript і те, що дізнаюсь у процесі <br>навчання. Ділюсь
+                    реальним досвідом — без
+                    зайвої теорії.</p>
+                <div class="hero__btn-wrapper">
+                    <button class="hero__btn-wrapper__first">📝 Читати статті</button>
+                    <button class="hero__btn-wrapper__last">💬 Написати мені</button>
+                </div>
+
+
+                <hr class="divider hero__divider" />
+                <div class="hero__details">
+                    <div class="hero__detail_two">
+                        <span class="hero__detail-num">24</span>
+                        <span class="hero__detail-text">Статті</span>
+                    </div>
+                    <div class="hero__detail">
+                        <span class="hero__detail-num">8 міс.</span>
+                        <span class="hero__detail-text">У розробці</span>
+                    </div>
+                    <div class="hero__detail">
+                        <span class="hero__detail-num">6</span>
+                        <span class="hero__detail-text">Проєктів</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="hero__termimal" aria-label="Інформація про розробника в терміналі">
+                <div class="hero__terminal-body">
+                    <pre class="terminal">
+<span class="terminal__arrow">→</span> cat about-me.json
+{
+  <span class="terminal__property">"name"</span>: <span class="terminal__text">"Назарій Гордійчук"</span>,
+  <span class="terminal__property">"role"</span>: <span class="terminal__text">"Frontend Developer"</span>,
+  <span class="terminal__property">"stack"</span>: [<span class="terminal__text">"HTML"</span>, <span class="terminal__text">"CSS"</span>, <span class="terminal__text">"JS"</span>],
+  <span class="terminal__property">"learning"</span>: <span class="terminal__text">"React + TypeScript"</span>,
+  <span class="terminal__property">"open_to_work"</span>: <span class="terminal__boolean">true</span>,
+  <span class="terminal__property">"location"</span>: <span class="terminal__text">"Запоріжжя, Україна 🇺🇦"</span>
+}
+<span class="terminal__arrow">→</span> <span class="terminal__cursor"></span>
+            </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cards container">
+        <div class="cards_info">
+            <h2 class="cards_info-h2">Останні <span class="cards_info-span">статті</span></h2>
+            <p class="cards_info-p">Всі статті →</p>
+        </div>
+                <div class="cards-list">
+            <div class="card-first">
+                <div class="card-first__header">
+                    <span class="card-first__icon">🎨</span>
+                </div>
+                <div class="card-first__about">
+                    <p class="card-first__about-p">CSS</p>
+                    <h2 class="card-first__about-h2">Як я навчився Tailwind за тиждень і чому не хочу повертатись до CSS</h2>
+                    <p class="card-first__about-p2">Розбираю utility-first підхід на реальному прикладі і пояснюю чому він змінив мій підхід до верстки.</p>
+                    <hr class="card-first__about-hr">
+                    <div class="card-first__about-footer">
+                        <p class="card-first__about-footer__p1">14 берез. 2025</p>
+                        <p class="card-first__about-footer__p2">8 хв читати</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-second">
+                <div class="card-second__header">
+                    <span class="card-second__icon">⚡</span>
+                </div>
+                <div class="card-second__about">
+                    <p class="card-second__about-p">JavaScript</p>
+                    <h2 class="card-second__about-h2">Event Loop пояснений на кухонному прикладі</h2>
+                    <p class="card-second__about-p2">Нарешті зрозумів async/await і Promise. Пояснюю так, як сам хотів прочитати рік тому.</p>
+                    <hr class="card-second__about-hr">
+                    <div class="card-second__about-footer">
+                        <p class="card-second__about-footer__p1">3 берез. 2025</p>
+                        <p class="card-second__about-footer__p2">12 хв читати</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-third">
+                <div class="card-third__header">
+                    <span class="card-third__icon">🚀</span>
+                </div>
+                <div class="card-third__about">
+                    <p class="card-third__about-p">Performance</p>
+                    <h2 class="card-third__about-h2">Підняв Lighthouse з 43 до 96 балів за один вечір</h2>
+                    <p class="card-third__about-p2">Конкретні виправлення: fetchpriority, lazy loading, defer і WebP конвертація з реальними цифрами до/після.</p>
+                    <hr class="card-third__about-hr">
+                    <div class="card-third__about-footer">
+                        <p class="card-third__about-footer__p1">22 лют. 2025</p>
+                        <p class="card-third__about-footer__p3">10 хв читати</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stack">
+        <div class="container stack__container">
+            <h2 class="stack__title">Мій<span>стрек</span></h2>
+            <div class="stack__graph">
+                <div class="stack__graph-font stack__frontend">
+                    <h3 class="stack__title">frontend</h3>
+                    <ul>
+                        <li>
+                            <div>
+                                <h4>HTML / Семантика</h4><span>98%</span>
+                            </div>
+                            <div class="stack__graph"></div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>CSS / SCSS</h4><span>85%</span>
+                            </div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>JavaScript(ES6+)</h4><span>78%</span>
+                            </div>
+                            <div></div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>Bootstrap 5 / Tailwind</h4><span>80%</span>
+                            </div>
+                            <div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    Інструменти
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-p">© 2025 DevBlog · Зроблено з ❤️ і VS Code</p>
+        <ul class="footer-list">
+            <li class="footer-list__item">Головна</li>
+            <li class="footer-list__item">Статті</li>
+            <li class="footer-list__item">GitHub</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
