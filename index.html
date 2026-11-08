@@ -106,15 +106,17 @@
             <h2 class="cards_info-h2">Останні <span class="cards_info-span">статті</span></h2>
             <p class="cards_info-p">Всі статті →</p>
         </div>
-                <div class="cards-list">
+        <div class="cards-list">
             <div class="card-first">
                 <div class="card-first__header">
                     <span class="card-first__icon">🎨</span>
                 </div>
                 <div class="card-first__about">
                     <p class="card-first__about-p">CSS</p>
-                    <h2 class="card-first__about-h2">Як я навчився Tailwind за тиждень і чому не хочу повертатись до CSS</h2>
-                    <p class="card-first__about-p2">Розбираю utility-first підхід на реальному прикладі і пояснюю чому він змінив мій підхід до верстки.</p>
+                    <h2 class="card-first__about-h2">Як я навчився Tailwind за тиждень і чому не хочу повертатись до CSS
+                    </h2>
+                    <p class="card-first__about-p2">Розбираю utility-first підхід на реальному прикладі і пояснюю чому
+                        він змінив мій підхід до верстки.</p>
                     <hr class="card-first__about-hr">
                     <div class="card-first__about-footer">
                         <p class="card-first__about-footer__p1">14 берез. 2025</p>
@@ -129,7 +131,8 @@
                 <div class="card-second__about">
                     <p class="card-second__about-p">JavaScript</p>
                     <h2 class="card-second__about-h2">Event Loop пояснений на кухонному прикладі</h2>
-                    <p class="card-second__about-p2">Нарешті зрозумів async/await і Promise. Пояснюю так, як сам хотів прочитати рік тому.</p>
+                    <p class="card-second__about-p2">Нарешті зрозумів async/await і Promise. Пояснюю так, як сам хотів
+                        прочитати рік тому.</p>
                     <hr class="card-second__about-hr">
                     <div class="card-second__about-footer">
                         <p class="card-second__about-footer__p1">3 берез. 2025</p>
@@ -144,7 +147,8 @@
                 <div class="card-third__about">
                     <p class="card-third__about-p">Performance</p>
                     <h2 class="card-third__about-h2">Підняв Lighthouse з 43 до 96 балів за один вечір</h2>
-                    <p class="card-third__about-p2">Конкретні виправлення: fetchpriority, lazy loading, defer і WebP конвертація з реальними цифрами до/після.</p>
+                    <p class="card-third__about-p2">Конкретні виправлення: fetchpriority, lazy loading, defer і WebP
+                        конвертація з реальними цифрами до/після.</p>
                     <hr class="card-third__about-hr">
                     <div class="card-third__about-footer">
                         <p class="card-third__about-footer__p1">22 лют. 2025</p>
@@ -154,45 +158,138 @@
             </div>
         </div>
     </section>
+
+
     <section class="stack">
         <div class="container stack__container">
-            <h2 class="stack__title">Мій<span>стрек</span></h2>
+            <h2 class="stack__title">Мій<span class="six_seven">стек</span></h2>
             <div class="stack__graph">
-                <div class="stack__graph-font stack__frontend">
-                    <h3 class="stack__title">frontend</h3>
-                    <ul>
-                        <li>
-                            <div>
-                                <h4>HTML / Семантика</h4><span>98%</span>
+                <div class="stack__graph-front stack__frontend">
+                    <h3 class="stack__graph-title">frontend</h3>
+                    <ul class="stack__graph-list">
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
+                                <h4>HTML / Семантика</h4><span>90%</span>
                             </div>
-                            <div class="stack__graph"></div>
+                            <div class="stack__graph-bar--front" data-progress="html"></div>
                         </li>
-                        <li>
-                            <div>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
                                 <h4>CSS / SCSS</h4><span>85%</span>
                             </div>
-                            <div></div>
+                            <div class="stack__graph-bar--front" data-progress="css"></div>
                         </li>
-                        <li>
-                            <div>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
                                 <h4>JavaScript(ES6+)</h4><span>78%</span>
                             </div>
-                            <div></div>
+                            <div class="stack__graph-bar--front" data-progress="js"></div>
                         </li>
-                        <li>
-                            <div>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
                                 <h4>Bootstrap 5 / Tailwind</h4><span>80%</span>
                             </div>
-                            <div></div>
+                            <div class="stack__graph-bar--front" data-progress="css-frame"></div>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    Інструменти
+
+                <div class="stack__graph-wrapper">
+                    <h3 class="stack__graph-title">Інструменти</h3>
+                    <ul class="stack__graph-list">
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
+                                <h4>Git / GitHub</h4><span>75%</span>
+                            </div>
+                            <div class="stack__graph-bar--tools" data-progress="Git"></div>
+                        </li>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
+                                <h4>Figma (читаємо макети)</h4><span>65%</span>
+                            </div>
+                            <div class="stack__graph-bar--tools" data-progress="Figma"></div>
+                        </li>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
+                                <h4>DevTools / Lighthouse</h4><span>78%</span>
+                            </div>
+                            <div class="stack__graph-bar--tools" data-progress="Devtools"></div>
+                        </li>
+                        <li class="stack__graph-item">
+                            <div class="stack__graph-head">
+                                <h4>Вчу: React</h4><span>30%</span>
+                            </div>
+                            <div class="stack__graph-bar--tools" data-progress="React"></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="container contact__container">
+            <h2 class="contact__title">Написати <span>мені</span></h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Відкритий до співпраці</h3>
+                    <p class="contact__description">
+                        Шукаю стажування або першу роботу у веб-розробці. Також
+                        радо відповідаю на питання про навчання і перший досвід у професії.
+                    </p>
+                    <ul class="contact__list">
+                        <li>
+                            <a class="contact__link">
+                                <span class="contact__icon">🐙</span>
+                                <span>github.com/nazargoiteens</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact__link">
+                                <span class="contact__icon">💼</span>
+                                <span>linkedin.com/in/nazazar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact__link">
+                                <span class="contact__icon">✈️</span>
+                                <span>@Nazazach</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact__link">
+                                <span class="contact__icon">📧</span>
+                                <span>Nazazach@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact__form">
+                    <div class="contact__fields">
+                        <div class="contact__field">
+                            <label for="contact-name">Ім'я</label>
+                            <input id="contact-name" name="name" type="text" placeholder="Твоє ім'я">
+                        </div>
+                        <div class="contact__field">
+                            <label for="contact-email">Email</label>
+                            <input id="contact-email" name="email" type="email" placeholder="email@Cototo.com">
+                        </div>
+                    </div>
+                    <div class="contact__field">
+                        <label for="contact-subject">Тема</label>
+                        <input id="contact-subject" name="subject" type="text" placeholder="Про що хочеш написати?">
+                    </div>
+                    <div class="contact__field">
+                        <label for="contact-message">Повідомлення</label>
+                        <textarea id="contact-message" placeholder="Напиши тут..."></textarea>
+                    </div>
+                    <button class="contact__submit" type="submit">Надіслати повідомлення <span>→</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <p class="footer-p">© 2025 DevBlog · Зроблено з ❤️ і VS Code</p>
         <ul class="footer-list">
