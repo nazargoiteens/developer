@@ -30,10 +30,10 @@
                     <li class="header__menu-list-item"><a>Про мене</a></li>
                 </ul>
             </nav>
-            <button class="header_btn" type="button">
+            <a class="header_btn" href="#contact">
                 Зв'язатись
                 <span class="header_btn-icon" aria-hidden="true">✉️</span>
-            </button>
+            </a>
         </div>
 
 
@@ -57,7 +57,7 @@
                     зайвої теорії.</p>
                 <div class="hero__btn-wrapper">
                     <button class="hero__btn-wrapper__first">📝 Читати статті</button>
-                    <button class="hero__btn-wrapper__last">💬 Написати мені</button>
+                    <a class="hero__btn-wrapper__last" href="#contact">💬 Написати мені</a>
                 </div>
 
 
@@ -227,7 +227,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container contact__container">
             <h2 class="contact__title">Написати <span>мені</span></h2>
             <div class="contact__content">
@@ -239,25 +239,25 @@
                     </p>
                     <ul class="contact__list">
                         <li>
-                            <a class="contact__link">
+                            <a class="contact__link" href="https://github.com/nazargoiteens" target="_blank" rel="noopener noreferrer">
                                 <span class="contact__icon">🐙</span>
                                 <span>github.com/nazargoiteens</span>
                             </a>
                         </li>
                         <li>
-                            <a class="contact__link">
+                            <a class="contact__link" href="https://linkedin.com/in/nazazar" target="_blank" rel="noopener noreferrer">
                                 <span class="contact__icon">💼</span>
                                 <span>linkedin.com/in/nazazar</span>
                             </a>
                         </li>
                         <li>
-                            <a class="contact__link">
+                            <a class="contact__link" href="https://t.me/Nazazach" target="_blank" rel="noopener noreferrer">
                                 <span class="contact__icon">✈️</span>
                                 <span>@Nazazach</span>
                             </a>
                         </li>
                         <li>
-                            <a class="contact__link">
+                            <a class="contact__link" href="mailto:Nazazach@gmail.com">
                                 <span class="contact__icon">📧</span>
                                 <span>Nazazach@gmail.com</span>
                             </a>
@@ -265,24 +265,24 @@
                     </ul>
                 </div>
 
-                <form class="contact__form">
+                <form class="contact__form" action="mailto:Nazazach@gmail.com" method="post" enctype="text/plain">
                     <div class="contact__fields">
                         <div class="contact__field">
                             <label for="contact-name">Ім'я</label>
-                            <input id="contact-name" name="name" type="text" placeholder="Твоє ім'я">
+                            <input id="contact-name" name="name" type="text" placeholder="Твоє ім'я" required>
                         </div>
                         <div class="contact__field">
                             <label for="contact-email">Email</label>
-                            <input id="contact-email" name="email" type="email" placeholder="email@Cototo.com">
+                            <input id="contact-email" name="email" type="email" placeholder="email@example.com" required>
                         </div>
                     </div>
                     <div class="contact__field">
                         <label for="contact-subject">Тема</label>
-                        <input id="contact-subject" name="subject" type="text" placeholder="Про що хочеш написати?">
+                        <input id="contact-subject" name="subject" type="text" placeholder="Про що хочеш написати?" required>
                     </div>
                     <div class="contact__field">
                         <label for="contact-message">Повідомлення</label>
-                        <textarea id="contact-message" placeholder="Напиши тут..."></textarea>
+                        <textarea id="contact-message" name="message" placeholder="Напиши тут..." required></textarea>
                     </div>
                     <button class="contact__submit" type="submit">Надіслати повідомлення <span>→</span></button>
                 </form>

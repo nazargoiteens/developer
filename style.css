@@ -275,6 +275,9 @@ body {
 
 
 .hero__btn-wrapper__last {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #30363d;
     border-radius: 10px;
     padding: 12px 24px;
@@ -761,6 +764,17 @@ body {
     color: var(--color-text-second);
     font-size: 16px;
     transition: border-color 150ms ease, color 150ms ease;
+}
+
+.contact__link:hover {
+    border-color: rgba(88, 166, 255, 0.6);
+    color: var(--color-text-fisrt);
+}
+
+.contact__link:focus-visible,
+.contact__submit:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
 }
 
 .contact__icon {
